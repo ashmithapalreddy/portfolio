@@ -328,7 +328,7 @@
 
 <header>
   <div class="navbar">
-    <div class="logo"><span class="dot"></span>ashmithapalreddy</div>
+    <div class="logo"><span class="dot"></span>ashmitha.reddy</div>
     <nav class="tabs">
       <a href="#about">about<span class="ext">.md</span></a>
       <a href="#projects">projects<span class="ext">/</span></a>
@@ -353,7 +353,7 @@
           <p class="desc">Computer Science undergraduate pursuing a <strong>dual degree</strong> across software engineering and data science. I build web applications from backend logic to user-facing interfaces, and contribute to open-source projects on the side.</p>
           <div class="btn-row">
             <a href="#projects" class="btn btn-primary">view_projects()</a>
-            <a href="resume.pdf" class="btn btn-ghost">↓ resume.pdf</a>
+            <a href="resume.pdf" download class="btn btn-ghost">↓ resume.pdf</a>
           </div>
         </div>
         <div class="terminal">
@@ -407,7 +407,7 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="sec-tag">02 · skills.json</span>
-        <h2 class="sec-title">Tools of the trade</h2>
+        <h2 class="sec-title">Tech Stack</h2>
       </div>
       <div class="skills-json reveal">
 <div>{</div>
@@ -466,7 +466,7 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="sec-tag">04 · education.log</span>
-        <h2 class="sec-title">Education & involvement</h2>
+        <h2 class="sec-title">Education</h2>
       </div>
       <div class="log">
         <div class="log-entry reveal">
@@ -546,13 +546,8 @@
           <span class="label">contact.sh</span>
         </div>
         <div class="contact-body">
-          <form id="contactForm">
-            <div class="field"><label for="name">name</label><input id="name" type="text" placeholder="Jane Doe" required></div>
-            <div class="field"><label for="email">email</label><input id="email" type="email" placeholder="jane@company.com" required></div>
-            <div class="field"><label for="message">message</label><textarea id="message" placeholder="Let's build something..." required></textarea></div>
-            <button type="submit" class="btn btn-primary">send_message() →</button>
-            <div class="send-status" id="sendStatus">✓ message queued — I'll reply within 24h</div>
-          </form>
+          <div class="term-line" style="margin-bottom:16px;"><span class="prompt">➜</span> <span class="path">~/portfolio</span> ./contact.sh</div>
+          <a href="mailto:ashmithapalreddy@gmail.com?subject=Portfolio%20Contact" class="btn btn-primary" style="width:100%; justify-content:center; box-sizing:border-box;">✉ email_me() →</a>
         </div>
       </div>
       <div class="contact-links reveal">
@@ -641,13 +636,6 @@
     });
   }, { threshold: 0.3 });
   bars.forEach(b => barIo.observe(b));
-
-  // Contact form (front-end only demo)
-  document.getElementById('contactForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    document.getElementById('sendStatus').style.display = 'block';
-    this.reset();
-  });
 </script>
 
 </body>
